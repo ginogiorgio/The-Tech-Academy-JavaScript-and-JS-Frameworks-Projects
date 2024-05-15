@@ -54,3 +54,5 @@ const person = {
         // Here x is 10
         document.getElementById(id).innerHTML = x;
   }
+
+ 
