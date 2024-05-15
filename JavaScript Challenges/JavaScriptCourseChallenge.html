@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS Challenges</title>
+    </head>
+    <body>
+        <script src="JavaScriptChallenge.js"></script>
+        
+        <script>
+             function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+            alert("Name must be filled out");
+            return false;
+            }
+         }
+        </script>
+
+
+        <button onclick="myFuncES6('demo')">Try it</button>
+        <p id="demo"></p>
+        
+       
+
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+
+    </body>
+</html>
